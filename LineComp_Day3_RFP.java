@@ -16,7 +16,7 @@ public class LineComp_Day3_RFP {
         System.out.println("Point x2 and y2 is "+x2+", "+y2);
 
         double length1 = Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
-        System.out.println("length of the line is "+length1);
+        System.out.println("length of the line1 is "+length1);
 
         int x3 = random.nextInt(10);
         int y3 = random.nextInt(10);
@@ -29,11 +29,13 @@ public class LineComp_Day3_RFP {
         double length2 = Math.sqrt(Math.pow(x4-x3,2)+Math.pow(y4-y3,2));
         System.out.println("length of the line2 is "+length2);
 
-        if (length1 == length2 ){
-            System.out.println("Both the lines are equal ");
+        if(length1 > length2){
+            System.out.println("Line1 is greater than line2 ");
+        } else if (length1 < length2) {
+            System.out.println("Line2 is greater than line1 ");
         }
         else{
-            System.out.println("Both the lines are not equal");
+            System.out.println("Both the lines are equal ");
         }
     }
 }
